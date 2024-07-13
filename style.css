@@ -1,0 +1,57 @@
+.search{
+    margin-left:600px;
+}
+.card-one{
+    width:400px;
+    height:350px;
+    border-radius:20px;
+}
+.card-face-one:active{
+    transform:translateY(0px);
+}
+.center{
+    text-align: center;
+}
+.wave span{
+    color:rgba(20, 122, 122, 0.421);
+    font-size: 30px;
+    position:relative;
+    display: inline-block;
+    animation: wave 1s infinite;
+    animation-delay:calc(.1s * var(--1));
+}
+.btn:hover{
+    background-color: rgb(123, 85, 185);
+}
+.spn{
+    font-size:4rem;
+    background:linear-gradient(90deg,rgb(217, 0, 255),rgba(59, 46, 59, 0.267),aqua);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-animation{
+
+    width:0;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing steps(20,end)forwards
+    infinite 8s;
+}
+@keyframes typing{
+    0%{
+        width:0
+    }
+    50%{
+        width:55%;
+    }
+}
+@keyframes wave{
+    0%;
+    40%;
+    100%{
+        transform:translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
